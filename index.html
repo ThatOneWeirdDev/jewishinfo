@@ -50,10 +50,37 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
+            position: relative;
+        }
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #003366;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .back-button:hover {
+            background-color: #0055a5;
+        }
+        .verified {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 0.9em;
+            color: #003366;
+            background-color: #f9f9f9;
+            border: 1px solid #003366;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
+    <a href="https://www.ou.org/" class="back-button">Back to Orthodox Union</a>
     <header>
         <h1>Daily Life in Orthodox Judaism</h1>
     </header>
@@ -87,8 +114,8 @@
         </section>
     </main>
     <footer>
-        &copy; 2024 Jewish Learning Resources | VERIFIED - By the Orthodox Union
-        <img src="https://th.bing.com/th/id/R.74a908dec0171f47c4d060d90d520960?rik=g41Ne%2fXZxMdiWQ&pid=ImgRaw&r=0">
+        &copy; 2024 Jewish Learning Resources
+        <div class="verified">Verified by the Orthodox Union</div>
     </footer>
 </body>
 </html>
